@@ -1,0 +1,133 @@
+Processing 8 files
+Start Processing: com/zipfetcher/ConfigHandler.java
+Import: java.io.*
+Import: java.util.Properties
+End  Processing: com/zipfetcher/ConfigHandler.java
+
+Start Processing: com/zipfetcher/DownloadManager.java
+Import: java.io.*
+Import: java.net.HttpURLConnection
+Import: java.net.URL
+End  Processing: com/zipfetcher/DownloadManager.java
+
+Start Processing: com/zipfetcher/FileExtractor.java
+Import: org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry
+Import: org.apache.commons.compress.archivers.sevenz.SevenZFile
+Import: org.apache.commons.compress.archivers.zip.ZipArchiveEntry
+Import: org.apache.commons.compress.archivers.zip.ZipFile
+Import: java.io.*
+Import: java.util.Enumeration
+End  Processing: com/zipfetcher/FileExtractor.java
+
+Start Processing: com/zipfetcher/ProgressDialog.java
+FOUND CONSTR method com/zipfetcher/ProgressDialog/ProgressDialog ()V com/zipfetcher/ProgressDialog
+Import: javax.swing.*
+Import: java.awt.*
+End  Processing: com/zipfetcher/ProgressDialog.java
+
+Start Processing: com/zipfetcher/ZipFetcher.java
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/fml/common/Mod
+Import: net.minecraftforge.fml.common.Mod
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
+Import: org.apache.logging.log4j.Logger
+End  Processing: com/zipfetcher/ZipFetcher.java
+
+Start Processing: com/zipfetcher/ZipFetcherCore.java
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1057,1069]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/mcDataDir[1072,1081]::mcDataDir->field_71412_D
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3343,3355]::getMinecraft->func_71410_x
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[3358,3374]::addScheduledTask->func_152344_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3402,3414]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[3417,3433]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3572,3584]::getMinecraft->func_71410_x
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[3587,3603]::addScheduledTask->func_152344_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3631,3643]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[3646,3662]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[8463,8475]::getMinecraft->func_71410_x
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[8478,8494]::addScheduledTask->func_152344_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[8530,8542]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/shutdown ()V[8545,8553]::shutdown->func_71400_g
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.client.gui.GuiScreen
+Import: net.minecraftforge.fml.relauncher.Side
+Import: net.minecraftforge.fml.relauncher.SideOnly
+Import: org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry
+Import: org.apache.commons.compress.archivers.sevenz.SevenZFile
+Import: org.apache.commons.io.FileUtils
+Import: org.apache.commons.io.IOUtils
+Import: org.apache.logging.log4j.Logger
+Import: java.io.*
+Import: java.net.URL
+Import: java.net.URLConnection
+Import: java.nio.file.Files
+Import: java.nio.file.Path
+Import: java.nio.file.Paths
+Import: java.util.Properties
+Import: java.util.zip.ZipEntry
+Import: java.util.zip.ZipInputStream
+End  Processing: com/zipfetcher/ZipFetcherCore.java
+
+Start Processing: com/zipfetcher/ZipFetcherProgressGUI.java
+Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[473,480]::initGui->func_73866_w_
+Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[505,512]::initGui->func_73866_w_
+Rename field net/minecraft/client/gui/GuiScreen/buttonList[535,545]::buttonList->field_146292_n
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[596,606]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[668,689]::drawDefaultBackground->func_146276_q_
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[730,748]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[748,760]::fontRenderer->field_146289_q
+Rename field net/minecraft/client/gui/GuiScreen/width[784,789]::width->field_146294_l
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[869,887]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[887,899]::fontRenderer->field_146289_q
+Rename field net/minecraft/client/gui/GuiScreen/width[920,925]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/width[1086,1091]::width->field_146294_l
+Rename method net/minecraft/client/gui/Gui/drawRect (IIIII)V[1159,1167]::drawRect->func_73734_a
+Rename method net/minecraft/client/gui/Gui/drawRect (IIIII)V[1398,1406]::drawRect->func_73734_a
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[1576,1594]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[1594,1606]::fontRenderer->field_146289_q
+Rename field net/minecraft/client/gui/GuiScreen/width[1629,1634]::width->field_146294_l
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[1694,1704]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/doesGuiPauseGame ()Z[1778,1794]::doesGuiPauseGame->func_73868_f
+Import: net.minecraft.client.gui.GuiScreen
+Import: net.minecraft.client.gui.GuiButton
+Import: net.minecraft.client.renderer.GlStateManager
+Import: net.minecraftforge.fml.relauncher.Side
+Import: net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: com/zipfetcher/ZipFetcherProgressGUI.java
+
+Start Processing: com/zipfetcher/ZipFetcherSuccessGUI.java
+Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[348,355]::initGui->func_73866_w_
+Rename method net/minecraft/client/gui/GuiScreen/initGui ()V[380,387]::initGui->func_73866_w_
+Rename field net/minecraft/client/gui/GuiScreen/buttonList[410,420]::buttonList->field_146292_n
+Rename field net/minecraft/client/gui/GuiScreen/buttonList[447,457]::buttonList->field_146292_n
+Rename field net/minecraft/client/gui/GuiScreen/width[488,493]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[518,524]::height->field_146295_m
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[650,660]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[722,743]::drawDefaultBackground->func_146276_q_
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[794,812]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[812,824]::fontRenderer->field_146289_q
+Rename field net/minecraft/client/gui/GuiScreen/width[859,864]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[884,890]::height->field_146295_m
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[933,951]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[951,963]::fontRenderer->field_146289_q
+Rename field net/minecraft/client/gui/GuiScreen/width[1008,1013]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[1033,1039]::height->field_146295_m
+Rename method net/minecraft/client/gui/Gui/drawCenteredString (Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V[1082,1100]::drawCenteredString->func_73732_a
+Rename field net/minecraft/client/gui/GuiScreen/fontRenderer[1100,1112]::fontRenderer->field_146289_q
+Rename field net/minecraft/client/gui/GuiScreen/width[1167,1172]::width->field_146294_l
+Rename field net/minecraft/client/gui/GuiScreen/height[1192,1198]::height->field_146295_m
+Rename field net/minecraft/client/gui/GuiScreen/mc[1355,1357]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[1370,1386]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[1424,1434]::drawScreen->func_73863_a
+Rename method net/minecraft/client/gui/GuiScreen/actionPerformed (Lnet/minecraft/client/gui/GuiButton;)V[1508,1523]::actionPerformed->func_146284_a
+Rename field net/minecraft/client/gui/GuiButton/id[1561,1563]::id->field_146127_k
+Rename field net/minecraft/client/gui/GuiScreen/mc[1601,1603]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[1616,1632]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/gui/GuiScreen/doesGuiPauseGame ()Z[1687,1703]::doesGuiPauseGame->func_73868_f
+Import: net.minecraft.client.gui.GuiScreen
+Import: net.minecraft.client.gui.GuiButton
+Import: net.minecraftforge.fml.relauncher.Side
+Import: net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: com/zipfetcher/ZipFetcherSuccessGUI.java
+

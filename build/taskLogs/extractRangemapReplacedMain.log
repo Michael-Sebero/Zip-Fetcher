@@ -1,0 +1,28 @@
+Unsupposrted library path: /home/user/Downloads/ZipFetcher/build/classes/api
+Unsupposrted library path: /home/user/Downloads/ZipFetcher/build/resources/api
+Symbol range map extraction starting
+Processing 8 files
+startProcessing "com/zipfetcher/ConfigHandler.java" md5: ba39c83266f53bfe8ef72d34fb84cfe1
+endProcessing "com/zipfetcher/ConfigHandler.java"
+
+startProcessing "com/zipfetcher/DownloadManager.java" md5: 476cff6c917b4c672f154e4332b32047
+endProcessing "com/zipfetcher/DownloadManager.java"
+
+startProcessing "com/zipfetcher/FileExtractor.java" md5: 8cc253d1e91350a0c29fdaad62bcc0b6
+endProcessing "com/zipfetcher/FileExtractor.java"
+
+startProcessing "com/zipfetcher/ProgressDialog.java" md5: 53b12de9c4a298824e5e933894254c3e
+endProcessing "com/zipfetcher/ProgressDialog.java"
+
+startProcessing "com/zipfetcher/ZipFetcher.java" md5: 80c9dea171a817e902554451ec0a20cf
+endProcessing "com/zipfetcher/ZipFetcher.java"
+
+startProcessing "com/zipfetcher/ZipFetcherCore.java" md5: 2a47add755d5f9f2694f22101f831b31
+endProcessing "com/zipfetcher/ZipFetcherCore.java"
+
+startProcessing "com/zipfetcher/ZipFetcherProgressGUI.java" md5: 9a48d12e027fef318617850df35eb220
+endProcessing "com/zipfetcher/ZipFetcherProgressGUI.java"
+
+startProcessing "com/zipfetcher/ZipFetcherSuccessGUI.java" md5: a799555ade8f41b7ae8ee730f1137f3a
+endProcessing "com/zipfetcher/ZipFetcherSuccessGUI.java"
+

@@ -1,0 +1,835 @@
+Unsupposrted library path: /home/user/Downloads/ZipFetcher/build/classes/api
+Unsupposrted library path: /home/user/Downloads/ZipFetcher/build/resources/api
+Symbol range map extraction starting
+Processing 8 files
+startProcessing "com/zipfetcher/ConfigHandler.java" md5: ba39c83266f53bfe8ef72d34fb84cfe1
+@|com/zipfetcher/ConfigHandler.java|8|22|com.zipfetcher|package|com.zipfetcher|(file)
+Class Start: com.zipfetcher.ConfigHandler
+   @|com/zipfetcher/ConfigHandler.java|86|99|ConfigHandler|class|com.zipfetcher.ConfigHandler|false
+   @|com/zipfetcher/ConfigHandler.java|127|133|String|class|java.lang.String|false
+   @|com/zipfetcher/ConfigHandler.java|127|133|String|class|java.lang.String|false
+   @|com/zipfetcher/ConfigHandler.java|134|148|CONFIG_COMMENT|field|com.zipfetcher.ConfigHandler|CONFIG_COMMENT|
+   @|com/zipfetcher/ConfigHandler.java|269|275|String|class|java.lang.String|false
+   @|com/zipfetcher/ConfigHandler.java|269|275|String|class|java.lang.String|false
+   @|com/zipfetcher/ConfigHandler.java|276|283|URL_KEY|field|com.zipfetcher.ConfigHandler|URL_KEY|
+   @|com/zipfetcher/ConfigHandler.java|327|333|String|class|java.lang.String|false
+   @|com/zipfetcher/ConfigHandler.java|327|333|String|class|java.lang.String|false
+   @|com/zipfetcher/ConfigHandler.java|334|345|DEFAULT_URL|field|com.zipfetcher.ConfigHandler|DEFAULT_URL|
+   Method Start: initializeConfig(Ljava/io/File;)V
+      @|com/zipfetcher/ConfigHandler.java|435|445|configFile|param|com.zipfetcher.ConfigHandler|initializeConfig|(Ljava/io/File;)V|configFile|0
+      @|com/zipfetcher/ConfigHandler.java|413|429|initializeConfig|method|com.zipfetcher.ConfigHandler|initializeConfig|(Ljava/io/File;)V
+      @|com/zipfetcher/ConfigHandler.java|430|434|File|class|java.io.File|false
+      @|com/zipfetcher/ConfigHandler.java|462|472|configFile|param|com.zipfetcher.ConfigHandler|initializeConfig|(Ljava/io/File;)V|configFile|0
+      @|com/zipfetcher/ConfigHandler.java|473|479|exists|method|java.io.File|exists|()Z
+      @|com/zipfetcher/ConfigHandler.java|519|529|configFile|param|com.zipfetcher.ConfigHandler|initializeConfig|(Ljava/io/File;)V|configFile|0
+      @|com/zipfetcher/ConfigHandler.java|530|543|getParentFile|method|java.io.File|getParentFile|()Ljava/io/File;
+      @|com/zipfetcher/ConfigHandler.java|546|552|mkdirs|method|java.io.File|mkdirs|()Z
+      @|com/zipfetcher/ConfigHandler.java|572|582|Properties|class|java.util.Properties|false
+      @|com/zipfetcher/ConfigHandler.java|595|605|Properties|class|java.util.Properties|false
+      @|com/zipfetcher/ConfigHandler.java|631|642|setProperty|method|java.util.Properties|setProperty|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+      @|com/zipfetcher/ConfigHandler.java|643|650|URL_KEY|field|com.zipfetcher.ConfigHandler|URL_KEY
+      @|com/zipfetcher/ConfigHandler.java|652|663|DEFAULT_URL|field|com.zipfetcher.ConfigHandler|DEFAULT_URL
+      @|com/zipfetcher/ConfigHandler.java|704|720|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ConfigHandler.java|731|747|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ConfigHandler.java|748|758|configFile|param|com.zipfetcher.ConfigHandler|initializeConfig|(Ljava/io/File;)V|configFile|0
+      @|com/zipfetcher/ConfigHandler.java|789|794|store|method|java.util.Properties|store|(Ljava/io/OutputStream;Ljava/lang/String;)V
+      @|com/zipfetcher/ConfigHandler.java|800|814|CONFIG_COMMENT|field|com.zipfetcher.ConfigHandler|CONFIG_COMMENT
+      @|com/zipfetcher/ConfigHandler.java|856|867|IOException|class|java.io.IOException|false
+      @|com/zipfetcher/ConfigHandler.java|891|906|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: initializeConfig(Ljava/io/File;)V
+   Method Start: getDownloadUrl(Ljava/io/File;)Ljava/lang/String;
+      @|com/zipfetcher/ConfigHandler.java|990|1000|configFile|param|com.zipfetcher.ConfigHandler|getDownloadUrl|(Ljava/io/File;)Ljava/lang/String;|configFile|0
+      @|com/zipfetcher/ConfigHandler.java|963|969|String|class|java.lang.String|false
+      @|com/zipfetcher/ConfigHandler.java|970|984|getDownloadUrl|method|com.zipfetcher.ConfigHandler|getDownloadUrl|(Ljava/io/File;)Ljava/lang/String;
+      @|com/zipfetcher/ConfigHandler.java|985|989|File|class|java.io.File|false
+      @|com/zipfetcher/ConfigHandler.java|1017|1027|configFile|param|com.zipfetcher.ConfigHandler|getDownloadUrl|(Ljava/io/File;)Ljava/lang/String;|configFile|0
+      @|com/zipfetcher/ConfigHandler.java|1028|1034|exists|method|java.io.File|exists|()Z
+      @|com/zipfetcher/ConfigHandler.java|1110|1120|Properties|class|java.util.Properties|false
+      @|com/zipfetcher/ConfigHandler.java|1133|1143|Properties|class|java.util.Properties|false
+      @|com/zipfetcher/ConfigHandler.java|1164|1179|FileInputStream|class|java.io.FileInputStream|false
+      @|com/zipfetcher/ConfigHandler.java|1190|1205|FileInputStream|class|java.io.FileInputStream|false
+      @|com/zipfetcher/ConfigHandler.java|1206|1216|configFile|param|com.zipfetcher.ConfigHandler|getDownloadUrl|(Ljava/io/File;)Ljava/lang/String;|configFile|0
+      @|com/zipfetcher/ConfigHandler.java|1243|1247|load|method|java.util.Properties|load|(Ljava/io/InputStream;)V
+      @|com/zipfetcher/ConfigHandler.java|1293|1299|String|class|java.lang.String|false
+      @|com/zipfetcher/ConfigHandler.java|1312|1323|getProperty|method|java.util.Properties|getProperty|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|com/zipfetcher/ConfigHandler.java|1324|1331|URL_KEY|field|com.zipfetcher.ConfigHandler|URL_KEY
+      @|com/zipfetcher/ConfigHandler.java|1337|1341|trim|method|java.lang.String|trim|()Ljava/lang/String;
+      @|com/zipfetcher/ConfigHandler.java|1365|1371|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/zipfetcher/ConfigHandler.java|1372|1383|DEFAULT_URL|field|com.zipfetcher.ConfigHandler|DEFAULT_URL
+      @|com/zipfetcher/ConfigHandler.java|1392|1399|isEmpty|method|java.lang.String|isEmpty|()Z
+      @|com/zipfetcher/ConfigHandler.java|1528|1539|IOException|class|java.io.IOException|false
+      @|com/zipfetcher/ConfigHandler.java|1559|1574|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: getDownloadUrl(Ljava/io/File;)Ljava/lang/String;
+Class End  : com.zipfetcher.ConfigHandler
+endProcessing "com/zipfetcher/ConfigHandler.java"
+
+startProcessing "com/zipfetcher/DownloadManager.java" md5: 476cff6c917b4c672f154e4332b32047
+@|com/zipfetcher/DownloadManager.java|8|22|com.zipfetcher|package|com.zipfetcher|(file)
+Class Start: com.zipfetcher.DownloadManager
+   @|com/zipfetcher/DownloadManager.java|113|128|DownloadManager|class|com.zipfetcher.DownloadManager|false
+   Method Start: downloadFile(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;
+      @|com/zipfetcher/DownloadManager.java|172|181|urlString|param|com.zipfetcher.DownloadManager|downloadFile|(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;|urlString|0
+      @|com/zipfetcher/DownloadManager.java|198|204|dialog|param|com.zipfetcher.DownloadManager|downloadFile|(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;|dialog|1
+      @|com/zipfetcher/DownloadManager.java|147|151|File|class|java.io.File|false
+      @|com/zipfetcher/DownloadManager.java|152|164|downloadFile|method|com.zipfetcher.DownloadManager|downloadFile|(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;
+      @|com/zipfetcher/DownloadManager.java|165|171|String|class|java.lang.String|false
+      @|com/zipfetcher/DownloadManager.java|183|197|ProgressDialog|class|com.zipfetcher.ProgressDialog|false
+      @|com/zipfetcher/DownloadManager.java|234|237|URL|class|java.net.URL|false
+      @|com/zipfetcher/DownloadManager.java|248|251|URL|class|java.net.URL|false
+      @|com/zipfetcher/DownloadManager.java|252|261|urlString|param|com.zipfetcher.DownloadManager|downloadFile|(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;|urlString|0
+      @|com/zipfetcher/DownloadManager.java|276|293|HttpURLConnection|class|java.net.HttpURLConnection|false
+      @|com/zipfetcher/DownloadManager.java|308|325|HttpURLConnection|class|java.net.HttpURLConnection|false
+      @|com/zipfetcher/DownloadManager.java|331|345|openConnection|method|java.net.URL|openConnection|()Ljava/net/URLConnection;
+      @|com/zipfetcher/DownloadManager.java|372|390|setRequestProperty|method|java.net.URLConnection|setRequestProperty|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com/zipfetcher/DownloadManager.java|538|564|setInstanceFollowRedirects|method|java.net.HttpURLConnection|setInstanceFollowRedirects|(Z)V
+      @|com/zipfetcher/DownloadManager.java|595|602|connect|method|java.net.URLConnection|connect|()V
+      @|com/zipfetcher/DownloadManager.java|661|676|getResponseCode|method|java.net.HttpURLConnection|getResponseCode|()I
+      @|com/zipfetcher/DownloadManager.java|712|729|HttpURLConnection|class|java.net.HttpURLConnection|false
+      @|com/zipfetcher/DownloadManager.java|730|737|HTTP_OK|field|java.net.HttpURLConnection|HTTP_OK
+      @|com/zipfetcher/DownloadManager.java|767|778|IOException|class|java.io.IOException|false
+      @|com/zipfetcher/DownloadManager.java|822|840|getResponseMessage|method|java.net.HttpURLConnection|getResponseMessage|()Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|911|931|getContentLengthLong|method|java.net.URLConnection|getContentLengthLong|()J
+      @|com/zipfetcher/DownloadManager.java|947|953|String|class|java.lang.String|false
+      @|com/zipfetcher/DownloadManager.java|965|983|getFileNameFromUrl|method|com.zipfetcher.DownloadManager|getFileNameFromUrl|(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|984|993|urlString|param|com.zipfetcher.DownloadManager|downloadFile|(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;|urlString|0
+      @|com/zipfetcher/DownloadManager.java|1070|1074|File|class|java.io.File|false
+      @|com/zipfetcher/DownloadManager.java|1086|1090|File|class|java.io.File|false
+      @|com/zipfetcher/DownloadManager.java|1091|1105|createTempFile|method|java.io.File|createTempFile|(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+      @|com/zipfetcher/DownloadManager.java|1153|1165|deleteOnExit|method|java.io.File|deleteOnExit|()V
+      @|com/zipfetcher/DownloadManager.java|1199|1210|InputStream|class|java.io.InputStream|false
+      @|com/zipfetcher/DownloadManager.java|1236|1250|getInputStream|method|java.net.URLConnection|getInputStream|()Ljava/io/InputStream;
+      @|com/zipfetcher/DownloadManager.java|1271|1287|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/DownloadManager.java|1307|1323|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/DownloadManager.java|1507|1513|dialog|param|com.zipfetcher.DownloadManager|downloadFile|(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;|dialog|1
+      @|com/zipfetcher/DownloadManager.java|1514|1523|setStatus|method|com.zipfetcher.ProgressDialog|setStatus|(Ljava/lang/String;)V
+      @|com/zipfetcher/DownloadManager.java|1625|1629|read|method|java.io.InputStream|read|([B)I
+      @|com/zipfetcher/DownloadManager.java|1681|1686|write|method|java.io.OutputStream|write|([BII)V
+      @|com/zipfetcher/DownloadManager.java|1926|1932|dialog|param|com.zipfetcher.DownloadManager|downloadFile|(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;|dialog|1
+      @|com/zipfetcher/DownloadManager.java|1933|1944|setProgress|method|com.zipfetcher.ProgressDialog|setProgress|(I)V
+      @|com/zipfetcher/DownloadManager.java|2082|2091|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/DownloadManager.java|2111|2126|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: downloadFile(Ljava/lang/String;Lcom/zipfetcher/ProgressDialog;)Ljava/io/File;
+   Method Start: getFileNameFromUrl(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|2221|2230|urlString|param|com.zipfetcher.DownloadManager|getFileNameFromUrl|(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;|urlString|0
+      @|com/zipfetcher/DownloadManager.java|2250|2260|connection|param|com.zipfetcher.DownloadManager|getFileNameFromUrl|(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;|connection|1
+      @|com/zipfetcher/DownloadManager.java|2188|2194|String|class|java.lang.String|false
+      @|com/zipfetcher/DownloadManager.java|2195|2213|getFileNameFromUrl|method|com.zipfetcher.DownloadManager|getFileNameFromUrl|(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|2214|2220|String|class|java.lang.String|false
+      @|com/zipfetcher/DownloadManager.java|2232|2249|HttpURLConnection|class|java.net.HttpURLConnection|false
+      @|com/zipfetcher/DownloadManager.java|2335|2341|String|class|java.lang.String|false
+      @|com/zipfetcher/DownloadManager.java|2363|2373|connection|param|com.zipfetcher.DownloadManager|getFileNameFromUrl|(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;|connection|1
+      @|com/zipfetcher/DownloadManager.java|2374|2388|getHeaderField|method|java.net.URLConnection|getHeaderField|(Ljava/lang/String;)Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|2474|2482|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com/zipfetcher/DownloadManager.java|2511|2517|String|class|java.lang.String|false
+      @|com/zipfetcher/DownloadManager.java|2548|2557|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|2577|2584|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com/zipfetcher/DownloadManager.java|2629|2639|startsWith|method|java.lang.String|startsWith|(Ljava/lang/String;)Z
+      @|com/zipfetcher/DownloadManager.java|2685|2694|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|2707|2718|lastIndexOf|method|java.lang.String|lastIndexOf|(Ljava/lang/String;)I
+      @|com/zipfetcher/DownloadManager.java|2829|2835|String|class|java.lang.String|false
+      @|com/zipfetcher/DownloadManager.java|2843|2852|urlString|param|com.zipfetcher.DownloadManager|getFileNameFromUrl|(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;|urlString|0
+      @|com/zipfetcher/DownloadManager.java|2853|2862|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|2863|2872|urlString|param|com.zipfetcher.DownloadManager|getFileNameFromUrl|(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;|urlString|0
+      @|com/zipfetcher/DownloadManager.java|2873|2884|lastIndexOf|method|java.lang.String|lastIndexOf|(I)I
+      @|com/zipfetcher/DownloadManager.java|2913|2921|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com/zipfetcher/DownloadManager.java|2954|2963|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|com/zipfetcher/DownloadManager.java|2972|2979|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com/zipfetcher/DownloadManager.java|3067|3075|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+   Method End: getFileNameFromUrl(Ljava/lang/String;Ljava/net/HttpURLConnection;)Ljava/lang/String;
+Class End  : com.zipfetcher.DownloadManager
+endProcessing "com/zipfetcher/DownloadManager.java"
+
+startProcessing "com/zipfetcher/FileExtractor.java" md5: 8cc253d1e91350a0c29fdaad62bcc0b6
+@|com/zipfetcher/FileExtractor.java|8|22|com.zipfetcher|package|com.zipfetcher|(file)
+Class Start: com.zipfetcher.FileExtractor
+   @|com/zipfetcher/FileExtractor.java|348|361|FileExtractor|class|com.zipfetcher.FileExtractor|false
+   Method Start: extractArchive(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|408|419|archiveFile|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|archiveFile|0
+      @|com/zipfetcher/FileExtractor.java|426|440|destinationDir|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|457|463|dialog|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|388|402|extractArchive|method|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|403|407|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|421|425|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|442|456|ProgressDialog|class|com.zipfetcher.ProgressDialog|false
+      @|com/zipfetcher/FileExtractor.java|475|481|String|class|java.lang.String|false
+      @|com/zipfetcher/FileExtractor.java|493|504|archiveFile|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|archiveFile|0
+      @|com/zipfetcher/FileExtractor.java|505|512|getName|method|java.io.File|getName|()Ljava/lang/String;
+      @|com/zipfetcher/FileExtractor.java|515|526|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com/zipfetcher/FileExtractor.java|578|586|endsWith|method|java.lang.String|endsWith|(Ljava/lang/String;)Z
+      @|com/zipfetcher/FileExtractor.java|621|631|extractZip|method|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|632|643|archiveFile|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|archiveFile|0
+      @|com/zipfetcher/FileExtractor.java|645|659|destinationDir|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|661|667|dialog|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|702|710|endsWith|method|java.lang.String|endsWith|(Ljava/lang/String;)Z
+      @|com/zipfetcher/FileExtractor.java|744|753|extract7z|method|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|754|765|archiveFile|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|archiveFile|0
+      @|com/zipfetcher/FileExtractor.java|767|781|destinationDir|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|783|789|dialog|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|904|914|extractZip|method|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|915|926|archiveFile|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|archiveFile|0
+      @|com/zipfetcher/FileExtractor.java|928|942|destinationDir|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|944|950|dialog|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|978|987|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/FileExtractor.java|1020|1029|extract7z|method|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|1030|1041|archiveFile|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|archiveFile|0
+      @|com/zipfetcher/FileExtractor.java|1043|1057|destinationDir|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|1059|1065|dialog|param|com.zipfetcher.FileExtractor|extractArchive|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|1117|1126|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/FileExtractor.java|1146|1161|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: extractArchive(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+   Method Start: extractZip(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|1248|1255|zipFile|param|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|zipFile|0
+      @|com/zipfetcher/FileExtractor.java|1262|1276|destinationDir|param|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|1293|1299|dialog|param|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|1232|1242|extractZip|method|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|1243|1247|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|1257|1261|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|1278|1292|ProgressDialog|class|com.zipfetcher.ProgressDialog|false
+      @|com/zipfetcher/FileExtractor.java|1316|1323|ZipFile|class|org.apache.commons.compress.archivers.zip.ZipFile|false
+      @|com/zipfetcher/FileExtractor.java|1334|1341|ZipFile|class|org.apache.commons.compress.archivers.zip.ZipFile|false
+      @|com/zipfetcher/FileExtractor.java|1342|1349|zipFile|param|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|zipFile|0
+      @|com/zipfetcher/FileExtractor.java|1366|1377|Enumeration|class|java.util.Enumeration|false
+      @|com/zipfetcher/FileExtractor.java|1378|1393|ZipArchiveEntry|class|org.apache.commons.compress.archivers.zip.ZipArchiveEntry|false
+      @|com/zipfetcher/FileExtractor.java|1409|1419|getEntries|method|org.apache.commons.compress.archivers.zip.ZipFile|getEntries|()Ljava/util/Enumeration;
+      @|com/zipfetcher/FileExtractor.java|1570|1585|hasMoreElements|method|java.util.Enumeration|hasMoreElements|()Z
+      @|com/zipfetcher/FileExtractor.java|1615|1626|nextElement|method|java.util.Enumeration|nextElement|()Ljava/lang/Object;
+      @|com/zipfetcher/FileExtractor.java|1748|1758|getEntries|method|org.apache.commons.compress.archivers.zip.ZipFile|getEntries|()Ljava/util/Enumeration;
+      @|com/zipfetcher/FileExtractor.java|1802|1817|hasMoreElements|method|java.util.Enumeration|hasMoreElements|()Z
+      @|com/zipfetcher/FileExtractor.java|1839|1854|ZipArchiveEntry|class|org.apache.commons.compress.archivers.zip.ZipArchiveEntry|false
+      @|com/zipfetcher/FileExtractor.java|1871|1882|nextElement|method|java.util.Enumeration|nextElement|()Ljava/lang/Object;
+      @|com/zipfetcher/FileExtractor.java|1929|1940|isDirectory|method|java.util.zip.ZipEntry|isDirectory|()Z
+      @|com/zipfetcher/FileExtractor.java|2067|2071|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|2089|2093|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|2094|2108|destinationDir|param|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|2116|2123|getName|method|java.util.zip.ZipEntry|getName|()Ljava/lang/String;
+      @|com/zipfetcher/FileExtractor.java|2225|2236|isValidPath|method|com.zipfetcher.FileExtractor|isValidPath|(Ljava/io/File;Ljava/io/File;)Z
+      @|com/zipfetcher/FileExtractor.java|2249|2263|destinationDir|param|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|2405|2418|getParentFile|method|java.io.File|getParentFile|()Ljava/io/File;
+      @|com/zipfetcher/FileExtractor.java|2421|2427|mkdirs|method|java.io.File|mkdirs|()Z
+      @|com/zipfetcher/FileExtractor.java|2501|2512|InputStream|class|java.io.InputStream|false
+      @|com/zipfetcher/FileExtractor.java|2531|2545|getInputStream|method|org.apache.commons.compress.archivers.zip.ZipFile|getInputStream|(Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;)Ljava/io/InputStream;
+      @|com/zipfetcher/FileExtractor.java|2575|2591|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/FileExtractor.java|2611|2627|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/FileExtractor.java|2803|2807|read|method|java.io.InputStream|read|([B)I
+      @|com/zipfetcher/FileExtractor.java|2863|2868|write|method|java.io.OutputStream|write|([BII)V
+      @|com/zipfetcher/FileExtractor.java|3073|3079|dialog|param|com.zipfetcher.FileExtractor|extractZip|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|3080|3091|setProgress|method|com.zipfetcher.ProgressDialog|setProgress|(I)V
+      @|com/zipfetcher/FileExtractor.java|3172|3181|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/FileExtractor.java|3201|3216|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: extractZip(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+   Method Start: extract7z(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|3302|3312|sevenZFile|param|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|sevenZFile|0
+      @|com/zipfetcher/FileExtractor.java|3319|3333|destinationDir|param|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|3350|3356|dialog|param|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|3287|3296|extract7z|method|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+      @|com/zipfetcher/FileExtractor.java|3297|3301|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|3314|3318|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|3335|3349|ProgressDialog|class|com.zipfetcher.ProgressDialog|false
+      @|com/zipfetcher/FileExtractor.java|3373|3383|SevenZFile|class|org.apache.commons.compress.archivers.sevenz.SevenZFile|false
+      @|com/zipfetcher/FileExtractor.java|3397|3407|SevenZFile|class|org.apache.commons.compress.archivers.sevenz.SevenZFile|false
+      @|com/zipfetcher/FileExtractor.java|3408|3418|sevenZFile|param|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|sevenZFile|0
+      @|com/zipfetcher/FileExtractor.java|3435|3453|SevenZArchiveEntry|class|org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry|false
+      @|com/zipfetcher/FileExtractor.java|3628|3640|getNextEntry|method|org.apache.commons.compress.archivers.sevenz.SevenZFile|getNextEntry|()Lorg/apache/commons/compress/archivers/sevenz/SevenZArchiveEntry;
+      @|com/zipfetcher/FileExtractor.java|3682|3693|isDirectory|method|org.apache.commons.compress.archivers.ArchiveEntry|isDirectory|()Z
+      @|com/zipfetcher/FileExtractor.java|3849|3854|close|method|java.lang.AutoCloseable|close|()V
+      @|com/zipfetcher/FileExtractor.java|3888|3898|SevenZFile|class|org.apache.commons.compress.archivers.sevenz.SevenZFile|false
+      @|com/zipfetcher/FileExtractor.java|3917|3927|SevenZFile|class|org.apache.commons.compress.archivers.sevenz.SevenZFile|false
+      @|com/zipfetcher/FileExtractor.java|3928|3938|sevenZFile|param|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|sevenZFile|0
+      @|com/zipfetcher/FileExtractor.java|3987|3999|getNextEntry|method|org.apache.commons.compress.archivers.sevenz.SevenZFile|getNextEntry|()Lorg/apache/commons/compress/archivers/sevenz/SevenZArchiveEntry;
+      @|com/zipfetcher/FileExtractor.java|4044|4055|isDirectory|method|org.apache.commons.compress.archivers.ArchiveEntry|isDirectory|()Z
+      @|com/zipfetcher/FileExtractor.java|4158|4162|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|4180|4184|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|4185|4199|destinationDir|param|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|4207|4214|getName|method|org.apache.commons.compress.archivers.ArchiveEntry|getName|()Ljava/lang/String;
+      @|com/zipfetcher/FileExtractor.java|4328|4339|isValidPath|method|com.zipfetcher.FileExtractor|isValidPath|(Ljava/io/File;Ljava/io/File;)Z
+      @|com/zipfetcher/FileExtractor.java|4352|4366|destinationDir|param|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|4528|4541|getParentFile|method|java.io.File|getParentFile|()Ljava/io/File;
+      @|com/zipfetcher/FileExtractor.java|4544|4550|mkdirs|method|java.io.File|mkdirs|()Z
+      @|com/zipfetcher/FileExtractor.java|4636|4652|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/FileExtractor.java|4672|4688|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/FileExtractor.java|4855|4859|read|method|org.apache.commons.compress.archivers.sevenz.SevenZFile|read|([B)I
+      @|com/zipfetcher/FileExtractor.java|4919|4924|write|method|java.io.OutputStream|write|([BII)V
+      @|com/zipfetcher/FileExtractor.java|5178|5184|dialog|param|com.zipfetcher.FileExtractor|extract7z|(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z|dialog|2
+      @|com/zipfetcher/FileExtractor.java|5185|5196|setProgress|method|com.zipfetcher.ProgressDialog|setProgress|(I)V
+      @|com/zipfetcher/FileExtractor.java|5295|5304|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/FileExtractor.java|5324|5339|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: extract7z(Ljava/io/File;Ljava/io/File;Lcom/zipfetcher/ProgressDialog;)Z
+   Method Start: isValidPath(Ljava/io/File;Ljava/io/File;)Z
+      @|com/zipfetcher/FileExtractor.java|5427|5437|outputFile|param|com.zipfetcher.FileExtractor|isValidPath|(Ljava/io/File;Ljava/io/File;)Z|outputFile|0
+      @|com/zipfetcher/FileExtractor.java|5444|5458|destinationDir|param|com.zipfetcher.FileExtractor|isValidPath|(Ljava/io/File;Ljava/io/File;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|5410|5421|isValidPath|method|com.zipfetcher.FileExtractor|isValidPath|(Ljava/io/File;Ljava/io/File;)Z
+      @|com/zipfetcher/FileExtractor.java|5422|5426|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|5439|5443|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|5488|5494|String|class|java.lang.String|false
+      @|com/zipfetcher/FileExtractor.java|5506|5520|destinationDir|param|com.zipfetcher.FileExtractor|isValidPath|(Ljava/io/File;Ljava/io/File;)Z|destinationDir|1
+      @|com/zipfetcher/FileExtractor.java|5521|5537|getCanonicalPath|method|java.io.File|getCanonicalPath|()Ljava/lang/String;
+      @|com/zipfetcher/FileExtractor.java|5553|5559|String|class|java.lang.String|false
+      @|com/zipfetcher/FileExtractor.java|5573|5583|outputFile|param|com.zipfetcher.FileExtractor|isValidPath|(Ljava/io/File;Ljava/io/File;)Z|outputFile|0
+      @|com/zipfetcher/FileExtractor.java|5584|5600|getCanonicalPath|method|java.io.File|getCanonicalPath|()Ljava/lang/String;
+      @|com/zipfetcher/FileExtractor.java|5634|5644|startsWith|method|java.lang.String|startsWith|(Ljava/lang/String;)Z
+      @|com/zipfetcher/FileExtractor.java|5656|5660|File|class|java.io.File|false
+      @|com/zipfetcher/FileExtractor.java|5661|5670|separator|field|java.io.File|separator
+      @|com/zipfetcher/FileExtractor.java|5686|5692|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com/zipfetcher/FileExtractor.java|5721|5732|IOException|class|java.io.IOException|false
+   Method End: isValidPath(Ljava/io/File;Ljava/io/File;)Z
+Class End  : com.zipfetcher.FileExtractor
+endProcessing "com/zipfetcher/FileExtractor.java"
+
+startProcessing "com/zipfetcher/ProgressDialog.java" md5: 53b12de9c4a298824e5e933894254c3e
+@|com/zipfetcher/ProgressDialog.java|8|22|com.zipfetcher|package|com.zipfetcher|(file)
+Class Start: com.zipfetcher.ProgressDialog
+   @|com/zipfetcher/ProgressDialog.java|80|94|ProgressDialog|class|com.zipfetcher.ProgressDialog|false
+   @|com/zipfetcher/ProgressDialog.java|103|109|JFrame|class|javax.swing.JFrame|false
+   @|com/zipfetcher/ProgressDialog.java|124|136|JProgressBar|class|javax.swing.JProgressBar|false
+   @|com/zipfetcher/ProgressDialog.java|124|136|JProgressBar|class|javax.swing.JProgressBar|false
+   @|com/zipfetcher/ProgressDialog.java|137|148|progressBar|field|com.zipfetcher.ProgressDialog|progressBar|
+   @|com/zipfetcher/ProgressDialog.java|162|168|JLabel|class|javax.swing.JLabel|false
+   @|com/zipfetcher/ProgressDialog.java|162|168|JLabel|class|javax.swing.JLabel|false
+   @|com/zipfetcher/ProgressDialog.java|169|180|statusLabel|field|com.zipfetcher.ProgressDialog|statusLabel|
+   @|com/zipfetcher/ProgressDialog.java|194|201|JButton|class|javax.swing.JButton|false
+   @|com/zipfetcher/ProgressDialog.java|194|201|JButton|class|javax.swing.JButton|false
+   @|com/zipfetcher/ProgressDialog.java|202|213|closeButton|field|com.zipfetcher.ProgressDialog|closeButton|
+   Method Start: ProgressDialog()V
+      @|com/zipfetcher/ProgressDialog.java|231|245|ProgressDialog|method|com.zipfetcher.ProgressDialog|ProgressDialog|()V
+      @|com/zipfetcher/ProgressDialog.java|258|278|initializeComponents|method|com.zipfetcher.ProgressDialog|initializeComponents|()V
+      @|com/zipfetcher/ProgressDialog.java|290|301|setupLayout|method|com.zipfetcher.ProgressDialog|setupLayout|()V
+      @|com/zipfetcher/ProgressDialog.java|313|324|setupWindow|method|com.zipfetcher.ProgressDialog|setupWindow|()V
+   Method End: ProgressDialog()V
+   Method Start: initializeComponents()V
+      @|com/zipfetcher/ProgressDialog.java|356|376|initializeComponents|method|com.zipfetcher.ProgressDialog|initializeComponents|()V
+      @|com/zipfetcher/ProgressDialog.java|389|400|progressBar|field|com.zipfetcher.ProgressDialog|progressBar
+      @|com/zipfetcher/ProgressDialog.java|407|419|JProgressBar|class|javax.swing.JProgressBar|false
+      @|com/zipfetcher/ProgressDialog.java|437|448|progressBar|field|com.zipfetcher.ProgressDialog|progressBar
+      @|com/zipfetcher/ProgressDialog.java|449|465|setStringPainted|method|javax.swing.JProgressBar|setStringPainted|(Z)V
+      @|com/zipfetcher/ProgressDialog.java|481|492|progressBar|field|com.zipfetcher.ProgressDialog|progressBar
+      @|com/zipfetcher/ProgressDialog.java|493|502|setString|method|javax.swing.JProgressBar|setString|(Ljava/lang/String;)V
+      @|com/zipfetcher/ProgressDialog.java|540|551|statusLabel|field|com.zipfetcher.ProgressDialog|statusLabel
+      @|com/zipfetcher/ProgressDialog.java|558|564|JLabel|class|javax.swing.JLabel|false
+      @|com/zipfetcher/ProgressDialog.java|590|604|SwingConstants|class|javax.swing.SwingConstants|false
+      @|com/zipfetcher/ProgressDialog.java|605|611|CENTER|field|javax.swing.SwingConstants|CENTER
+      @|com/zipfetcher/ProgressDialog.java|622|633|statusLabel|field|com.zipfetcher.ProgressDialog|statusLabel
+      @|com/zipfetcher/ProgressDialog.java|634|641|setFont|method|java.awt.Component|setFont|(Ljava/awt/Font;)V
+      @|com/zipfetcher/ProgressDialog.java|642|653|statusLabel|field|com.zipfetcher.ProgressDialog|statusLabel
+      @|com/zipfetcher/ProgressDialog.java|654|661|getFont|method|java.awt.MenuContainer|getFont|()Ljava/awt/Font;
+      @|com/zipfetcher/ProgressDialog.java|664|674|deriveFont|method|java.awt.Font|deriveFont|(F)Ljava/awt/Font;
+      @|com/zipfetcher/ProgressDialog.java|699|710|closeButton|field|com.zipfetcher.ProgressDialog|closeButton
+      @|com/zipfetcher/ProgressDialog.java|717|724|JButton|class|javax.swing.JButton|false
+      @|com/zipfetcher/ProgressDialog.java|743|754|closeButton|field|com.zipfetcher.ProgressDialog|closeButton
+      @|com/zipfetcher/ProgressDialog.java|755|765|setEnabled|method|java.awt.Component|setEnabled|(Z)V
+      @|com/zipfetcher/ProgressDialog.java|782|793|closeButton|field|com.zipfetcher.ProgressDialog|closeButton
+      @|com/zipfetcher/ProgressDialog.java|794|811|addActionListener|method|javax.swing.AbstractButton|addActionListener|(Ljava/awt/event/ActionListener;)V
+      @|com/zipfetcher/ProgressDialog.java|817|824|dispose|method|java.awt.Window|dispose|()V
+   Method End: initializeComponents()V
+   Method Start: setupLayout()V
+      @|com/zipfetcher/ProgressDialog.java|857|868|setupLayout|method|com.zipfetcher.ProgressDialog|setupLayout|()V
+      @|com/zipfetcher/ProgressDialog.java|881|890|setLayout|method|java.awt.Container|setLayout|(Ljava/awt/LayoutManager;)V
+      @|com/zipfetcher/ProgressDialog.java|895|907|BorderLayout|class|java.awt.BorderLayout|false
+      @|com/zipfetcher/ProgressDialog.java|935|941|JPanel|class|javax.swing.JPanel|false
+      @|com/zipfetcher/ProgressDialog.java|960|966|JPanel|class|javax.swing.JPanel|false
+      @|com/zipfetcher/ProgressDialog.java|971|981|GridLayout|class|java.awt.GridLayout|false
+      @|com/zipfetcher/ProgressDialog.java|1016|1025|setBorder|method|javax.swing.JComponent|setBorder|(Ljavax/swing/border/Border;)V
+      @|com/zipfetcher/ProgressDialog.java|1026|1039|BorderFactory|class|javax.swing.BorderFactory|false
+      @|com/zipfetcher/ProgressDialog.java|1040|1057|createEmptyBorder|method|javax.swing.BorderFactory|createEmptyBorder|(IIII)Ljavax/swing/border/Border;
+      @|com/zipfetcher/ProgressDialog.java|1096|1099|add|method|java.awt.Container|add|(Ljava/awt/Component;)Ljava/awt/Component;
+      @|com/zipfetcher/ProgressDialog.java|1100|1111|statusLabel|field|com.zipfetcher.ProgressDialog|statusLabel
+      @|com/zipfetcher/ProgressDialog.java|1134|1137|add|method|java.awt.Container|add|(Ljava/awt/Component;)Ljava/awt/Component;
+      @|com/zipfetcher/ProgressDialog.java|1138|1149|progressBar|field|com.zipfetcher.ProgressDialog|progressBar
+      @|com/zipfetcher/ProgressDialog.java|1169|1175|JPanel|class|javax.swing.JPanel|false
+      @|com/zipfetcher/ProgressDialog.java|1194|1200|JPanel|class|javax.swing.JPanel|false
+      @|com/zipfetcher/ProgressDialog.java|1205|1215|FlowLayout|class|java.awt.FlowLayout|false
+      @|com/zipfetcher/ProgressDialog.java|1240|1243|add|method|java.awt.Container|add|(Ljava/awt/Component;)Ljava/awt/Component;
+      @|com/zipfetcher/ProgressDialog.java|1244|1255|closeButton|field|com.zipfetcher.ProgressDialog|closeButton
+      @|com/zipfetcher/ProgressDialog.java|1275|1278|add|method|java.awt.Container|add|(Ljava/awt/Component;Ljava/lang/Object;)V
+      @|com/zipfetcher/ProgressDialog.java|1292|1304|BorderLayout|class|java.awt.BorderLayout|false
+      @|com/zipfetcher/ProgressDialog.java|1305|1311|CENTER|field|java.awt.BorderLayout|CENTER
+      @|com/zipfetcher/ProgressDialog.java|1322|1325|add|method|java.awt.Container|add|(Ljava/awt/Component;Ljava/lang/Object;)V
+      @|com/zipfetcher/ProgressDialog.java|1339|1351|BorderLayout|class|java.awt.BorderLayout|false
+      @|com/zipfetcher/ProgressDialog.java|1352|1357|SOUTH|field|java.awt.BorderLayout|SOUTH
+   Method End: setupLayout()V
+   Method Start: setupWindow()V
+      @|com/zipfetcher/ProgressDialog.java|1388|1399|setupWindow|method|com.zipfetcher.ProgressDialog|setupWindow|()V
+      @|com/zipfetcher/ProgressDialog.java|1412|1420|setTitle|method|java.awt.Frame|setTitle|(Ljava/lang/String;)V
+      @|com/zipfetcher/ProgressDialog.java|1445|1452|setSize|method|java.awt.Component|setSize|(II)V
+      @|com/zipfetcher/ProgressDialog.java|1472|1496|setDefaultCloseOperation|method|javax.swing.JFrame|setDefaultCloseOperation|(I)V
+      @|com/zipfetcher/ProgressDialog.java|1497|1503|JFrame|class|javax.swing.JFrame|false
+      @|com/zipfetcher/ProgressDialog.java|1504|1523|DO_NOTHING_ON_CLOSE|field|javax.swing.WindowConstants|DO_NOTHING_ON_CLOSE
+      @|com/zipfetcher/ProgressDialog.java|1534|1555|setLocationRelativeTo|method|java.awt.Window|setLocationRelativeTo|(Ljava/awt/Component;)V
+      @|com/zipfetcher/ProgressDialog.java|1571|1583|setResizable|method|java.awt.Frame|setResizable|(Z)V
+      @|com/zipfetcher/ProgressDialog.java|1634|1648|setAlwaysOnTop|method|java.awt.Window|setAlwaysOnTop|(Z)V
+   Method End: setupWindow()V
+   Method Start: setProgress(I)V
+      @|com/zipfetcher/ProgressDialog.java|1699|1707|progress|param|com.zipfetcher.ProgressDialog|setProgress|(I)V|progress|0
+      @|com/zipfetcher/ProgressDialog.java|1683|1694|setProgress|method|com.zipfetcher.ProgressDialog|setProgress|(I)V
+      @|com/zipfetcher/ProgressDialog.java|1719|1733|SwingUtilities|class|javax.swing.SwingUtilities|false
+      @|com/zipfetcher/ProgressDialog.java|1734|1745|invokeLater|method|javax.swing.SwingUtilities|invokeLater|(Ljava/lang/Runnable;)V
+      @|com/zipfetcher/ProgressDialog.java|1766|1777|progressBar|field|com.zipfetcher.ProgressDialog|progressBar
+      @|com/zipfetcher/ProgressDialog.java|1778|1786|setValue|method|javax.swing.JProgressBar|setValue|(I)V
+      @|com/zipfetcher/ProgressDialog.java|1787|1795|progress|param|com.zipfetcher.ProgressDialog|setProgress|(I)V|progress|0
+      @|com/zipfetcher/ProgressDialog.java|1810|1821|progressBar|field|com.zipfetcher.ProgressDialog|progressBar
+      @|com/zipfetcher/ProgressDialog.java|1822|1831|setString|method|javax.swing.JProgressBar|setString|(Ljava/lang/String;)V
+      @|com/zipfetcher/ProgressDialog.java|1832|1840|progress|param|com.zipfetcher.ProgressDialog|setProgress|(I)V|progress|0
+   Method End: setProgress(I)V
+   Method Start: setStatus(Ljava/lang/String;)V
+      @|com/zipfetcher/ProgressDialog.java|1905|1911|status|param|com.zipfetcher.ProgressDialog|setStatus|(Ljava/lang/String;)V|status|0
+      @|com/zipfetcher/ProgressDialog.java|1888|1897|setStatus|method|com.zipfetcher.ProgressDialog|setStatus|(Ljava/lang/String;)V
+      @|com/zipfetcher/ProgressDialog.java|1898|1904|String|class|java.lang.String|false
+      @|com/zipfetcher/ProgressDialog.java|1923|1937|SwingUtilities|class|javax.swing.SwingUtilities|false
+      @|com/zipfetcher/ProgressDialog.java|1938|1949|invokeLater|method|javax.swing.SwingUtilities|invokeLater|(Ljava/lang/Runnable;)V
+      @|com/zipfetcher/ProgressDialog.java|1970|1981|statusLabel|field|com.zipfetcher.ProgressDialog|statusLabel
+      @|com/zipfetcher/ProgressDialog.java|1982|1989|setText|method|javax.swing.JLabel|setText|(Ljava/lang/String;)V
+      @|com/zipfetcher/ProgressDialog.java|1990|1996|status|param|com.zipfetcher.ProgressDialog|setStatus|(Ljava/lang/String;)V|status|0
+      @|com/zipfetcher/ProgressDialog.java|2015|2021|status|param|com.zipfetcher.ProgressDialog|setStatus|(Ljava/lang/String;)V|status|0
+      @|com/zipfetcher/ProgressDialog.java|2022|2033|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com/zipfetcher/ProgressDialog.java|2036|2044|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com/zipfetcher/ProgressDialog.java|2062|2068|status|param|com.zipfetcher.ProgressDialog|setStatus|(Ljava/lang/String;)V|status|0
+      @|com/zipfetcher/ProgressDialog.java|2069|2080|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com/zipfetcher/ProgressDialog.java|2083|2091|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com/zipfetcher/ProgressDialog.java|2105|2111|status|param|com.zipfetcher.ProgressDialog|setStatus|(Ljava/lang/String;)V|status|0
+      @|com/zipfetcher/ProgressDialog.java|2112|2123|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com/zipfetcher/ProgressDialog.java|2126|2134|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com/zipfetcher/ProgressDialog.java|2163|2174|closeButton|field|com.zipfetcher.ProgressDialog|closeButton
+      @|com/zipfetcher/ProgressDialog.java|2175|2185|setEnabled|method|java.awt.Component|setEnabled|(Z)V
+      @|com/zipfetcher/ProgressDialog.java|2209|2220|progressBar|field|com.zipfetcher.ProgressDialog|progressBar
+      @|com/zipfetcher/ProgressDialog.java|2221|2229|setValue|method|javax.swing.JProgressBar|setValue|(I)V
+      @|com/zipfetcher/ProgressDialog.java|2252|2263|progressBar|field|com.zipfetcher.ProgressDialog|progressBar
+      @|com/zipfetcher/ProgressDialog.java|2264|2273|setString|method|javax.swing.JProgressBar|setString|(Ljava/lang/String;)V
+   Method End: setStatus(Ljava/lang/String;)V
+Class End  : com.zipfetcher.ProgressDialog
+endProcessing "com/zipfetcher/ProgressDialog.java"
+
+startProcessing "com/zipfetcher/ZipFetcher.java" md5: 80c9dea171a817e902554451ec0a20cf
+@|com/zipfetcher/ZipFetcher.java|8|22|com.zipfetcher|package|com.zipfetcher|(file)
+Class Start: com.zipfetcher.ZipFetcher
+   @|com/zipfetcher/ZipFetcher.java|246|249|Mod|class|net.minecraftforge.fml.common.Mod|false
+   @|com/zipfetcher/ZipFetcher.java|250|255|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com/zipfetcher/ZipFetcher.java|258|268|ZipFetcher|class|com.zipfetcher.ZipFetcher|false
+   @|com/zipfetcher/ZipFetcher.java|269|274|MODID|field|com.zipfetcher.ZipFetcher|MODID
+   @|com/zipfetcher/ZipFetcher.java|276|280|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com/zipfetcher/ZipFetcher.java|283|293|ZipFetcher|class|com.zipfetcher.ZipFetcher|false
+   @|com/zipfetcher/ZipFetcher.java|294|298|NAME|field|com.zipfetcher.ZipFetcher|NAME
+   @|com/zipfetcher/ZipFetcher.java|300|307|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com/zipfetcher/ZipFetcher.java|310|320|ZipFetcher|class|com.zipfetcher.ZipFetcher|false
+   @|com/zipfetcher/ZipFetcher.java|321|328|VERSION|field|com.zipfetcher.ZipFetcher|VERSION
+   @|com/zipfetcher/ZipFetcher.java|343|353|ZipFetcher|class|com.zipfetcher.ZipFetcher|false
+   @|com/zipfetcher/ZipFetcher.java|380|386|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcher.java|380|386|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcher.java|387|392|MODID|field|com.zipfetcher.ZipFetcher|MODID|
+   @|com/zipfetcher/ZipFetcher.java|433|439|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcher.java|433|439|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcher.java|440|444|NAME|field|com.zipfetcher.ZipFetcher|NAME|
+   @|com/zipfetcher/ZipFetcher.java|486|492|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcher.java|486|492|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcher.java|493|500|VERSION|field|com.zipfetcher.ZipFetcher|VERSION|
+   @|com/zipfetcher/ZipFetcher.java|532|538|Logger|class|org.apache.logging.log4j.Logger|false
+   @|com/zipfetcher/ZipFetcher.java|532|538|Logger|class|org.apache.logging.log4j.Logger|false
+   @|com/zipfetcher/ZipFetcher.java|539|545|logger|field|com.zipfetcher.ZipFetcher|logger|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/zipfetcher/ZipFetcher.java|620|625|event|param|com.zipfetcher.ZipFetcher|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/zipfetcher/ZipFetcher.java|553|569|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/zipfetcher/ZipFetcher.java|586|593|preInit|method|com.zipfetcher.ZipFetcher|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/zipfetcher/ZipFetcher.java|594|619|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|false
+      @|com/zipfetcher/ZipFetcher.java|637|643|logger|field|com.zipfetcher.ZipFetcher|logger
+      @|com/zipfetcher/ZipFetcher.java|646|651|event|param|com.zipfetcher.ZipFetcher|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/zipfetcher/ZipFetcher.java|652|661|getModLog|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getModLog|()Lorg/apache/logging/log4j/Logger;
+      @|com/zipfetcher/ZipFetcher.java|673|679|logger|field|com.zipfetcher.ZipFetcher|logger
+      @|com/zipfetcher/ZipFetcher.java|680|684|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/zipfetcher/ZipFetcher.java|789|794|event|param|com.zipfetcher.ZipFetcher|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/zipfetcher/ZipFetcher.java|728|744|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/zipfetcher/ZipFetcher.java|761|765|init|method|com.zipfetcher.ZipFetcher|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/zipfetcher/ZipFetcher.java|766|788|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent|false
+      @|com/zipfetcher/ZipFetcher.java|848|862|ZipFetcherCore|class|com.zipfetcher.ZipFetcherCore|false
+      @|com/zipfetcher/ZipFetcher.java|863|873|initialize|method|com.zipfetcher.ZipFetcherCore|initialize|(Lorg/apache/logging/log4j/Logger;)V
+      @|com/zipfetcher/ZipFetcher.java|874|880|logger|field|com.zipfetcher.ZipFetcher|logger
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: getLogger()Lorg/apache/logging/log4j/Logger;
+      @|com/zipfetcher/ZipFetcher.java|908|914|Logger|class|org.apache.logging.log4j.Logger|false
+      @|com/zipfetcher/ZipFetcher.java|915|924|getLogger|method|com.zipfetcher.ZipFetcher|getLogger|()Lorg/apache/logging/log4j/Logger;
+      @|com/zipfetcher/ZipFetcher.java|944|950|logger|field|com.zipfetcher.ZipFetcher|logger
+   Method End: getLogger()Lorg/apache/logging/log4j/Logger;
+Class End  : com.zipfetcher.ZipFetcher
+endProcessing "com/zipfetcher/ZipFetcher.java"
+
+startProcessing "com/zipfetcher/ZipFetcherCore.java" md5: 2a47add755d5f9f2694f22101f831b31
+@|com/zipfetcher/ZipFetcherCore.java|8|22|com.zipfetcher|package|com.zipfetcher|(file)
+Class Start: com.zipfetcher.ZipFetcherCore
+   @|com/zipfetcher/ZipFetcherCore.java|724|738|ZipFetcherCore|class|com.zipfetcher.ZipFetcherCore|false
+   @|com/zipfetcher/ZipFetcherCore.java|760|766|Logger|class|org.apache.logging.log4j.Logger|false
+   @|com/zipfetcher/ZipFetcherCore.java|760|766|Logger|class|org.apache.logging.log4j.Logger|false
+   @|com/zipfetcher/ZipFetcherCore.java|767|773|logger|field|com.zipfetcher.ZipFetcherCore|logger|
+   @|com/zipfetcher/ZipFetcherCore.java|800|806|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcherCore.java|800|806|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcherCore.java|807|818|CONFIG_FILE|field|com.zipfetcher.ZipFetcherCore|CONFIG_FILE|
+   @|com/zipfetcher/ZipFetcherCore.java|865|869|File|class|java.io.File|false
+   @|com/zipfetcher/ZipFetcherCore.java|865|869|File|class|java.io.File|false
+   @|com/zipfetcher/ZipFetcherCore.java|870|880|configFile|field|com.zipfetcher.ZipFetcherCore|configFile|
+   @|com/zipfetcher/ZipFetcherCore.java|901|905|File|class|java.io.File|false
+   @|com/zipfetcher/ZipFetcherCore.java|901|905|File|class|java.io.File|false
+   @|com/zipfetcher/ZipFetcherCore.java|906|918|minecraftDir|field|com.zipfetcher.ZipFetcherCore|minecraftDir|
+   @|com/zipfetcher/ZipFetcherCore.java|939|943|File|class|java.io.File|false
+   @|com/zipfetcher/ZipFetcherCore.java|939|943|File|class|java.io.File|false
+   @|com/zipfetcher/ZipFetcherCore.java|944|951|modsDir|field|com.zipfetcher.ZipFetcherCore|modsDir|
+   Method Start: initialize(Lorg/apache/logging/log4j/Logger;)V
+      @|com/zipfetcher/ZipFetcherCore.java|995|998|log|param|com.zipfetcher.ZipFetcherCore|initialize|(Lorg/apache/logging/log4j/Logger;)V|log|0
+      @|com/zipfetcher/ZipFetcherCore.java|977|987|initialize|method|com.zipfetcher.ZipFetcherCore|initialize|(Lorg/apache/logging/log4j/Logger;)V
+      @|com/zipfetcher/ZipFetcherCore.java|988|994|Logger|class|org.apache.logging.log4j.Logger|false
+      @|com/zipfetcher/ZipFetcherCore.java|1010|1016|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|1019|1022|log|param|com.zipfetcher.ZipFetcherCore|initialize|(Lorg/apache/logging/log4j/Logger;)V|log|0
+      @|com/zipfetcher/ZipFetcherCore.java|1032|1044|minecraftDir|field|com.zipfetcher.ZipFetcherCore|minecraftDir
+      @|com/zipfetcher/ZipFetcherCore.java|1047|1056|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/zipfetcher/ZipFetcherCore.java|1057|1069|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/zipfetcher/ZipFetcherCore.java|1072|1081|mcDataDir|field|net.minecraft.client.Minecraft|mcDataDir
+      @|com/zipfetcher/ZipFetcherCore.java|1091|1098|modsDir|field|com.zipfetcher.ZipFetcherCore|modsDir
+      @|com/zipfetcher/ZipFetcherCore.java|1105|1109|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|1110|1122|minecraftDir|field|com.zipfetcher.ZipFetcherCore|minecraftDir
+      @|com/zipfetcher/ZipFetcherCore.java|1141|1151|configFile|field|com.zipfetcher.ZipFetcherCore|configFile
+      @|com/zipfetcher/ZipFetcherCore.java|1158|1162|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|1163|1175|minecraftDir|field|com.zipfetcher.ZipFetcherCore|minecraftDir
+      @|com/zipfetcher/ZipFetcherCore.java|1177|1188|CONFIG_FILE|field|com.zipfetcher.ZipFetcherCore|CONFIG_FILE
+      @|com/zipfetcher/ZipFetcherCore.java|1281|1287|Thread|class|java.lang.Thread|false
+      @|com/zipfetcher/ZipFetcherCore.java|1288|1302|ZipFetcherCore|class|com.zipfetcher.ZipFetcherCore|false
+      @|com/zipfetcher/ZipFetcherCore.java|1304|1321|startFetchProcess|method|com.zipfetcher.ZipFetcherCore|startFetchProcess|()V
+      @|com/zipfetcher/ZipFetcherCore.java|1323|1328|start|method|java.lang.Thread|start|()V
+   Method End: initialize(Lorg/apache/logging/log4j/Logger;)V
+   Method Start: startFetchProcess()V
+      @|com/zipfetcher/ZipFetcherCore.java|1363|1380|startFetchProcess|method|com.zipfetcher.ZipFetcherCore|startFetchProcess|()V
+      @|com/zipfetcher/ZipFetcherCore.java|1459|1469|configFile|field|com.zipfetcher.ZipFetcherCore|configFile
+      @|com/zipfetcher/ZipFetcherCore.java|1470|1476|exists|method|java.io.File|exists|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|1498|1517|createDefaultConfig|method|com.zipfetcher.ZipFetcherCore|createDefaultConfig|()V
+      @|com/zipfetcher/ZipFetcherCore.java|1537|1543|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|1544|1548|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com/zipfetcher/ZipFetcherCore.java|1716|1726|Properties|class|java.util.Properties|false
+      @|com/zipfetcher/ZipFetcherCore.java|1740|1750|Properties|class|java.util.Properties|false
+      @|com/zipfetcher/ZipFetcherCore.java|1771|1786|FileInputStream|class|java.io.FileInputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|1797|1812|FileInputStream|class|java.io.FileInputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|1813|1823|configFile|field|com.zipfetcher.ZipFetcherCore|configFile
+      @|com/zipfetcher/ZipFetcherCore.java|1851|1855|load|method|java.util.Properties|load|(Ljava/io/InputStream;)V
+      @|com/zipfetcher/ZipFetcherCore.java|1889|1895|String|class|java.lang.String|false
+      @|com/zipfetcher/ZipFetcherCore.java|1917|1928|getProperty|method|java.util.Properties|getProperty|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|1949|1953|trim|method|java.lang.String|trim|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|1985|1992|isEmpty|method|java.lang.String|isEmpty|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|2014|2020|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|2021|2025|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com/zipfetcher/ZipFetcherCore.java|2156|2171|showProgressGUI|method|com.zipfetcher.ZipFetcherCore|showProgressGUI|()V
+      @|com/zipfetcher/ZipFetcherCore.java|2224|2228|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|2240|2252|downloadFile|method|com.zipfetcher.ZipFetcherCore|downloadFile|(Ljava/lang/String;)Ljava/io/File;
+      @|com/zipfetcher/ZipFetcherCore.java|2319|2333|extractArchive|method|com.zipfetcher.ZipFetcherCore|extractArchive|(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|2370|2376|delete|method|java.io.File|delete|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|2453|2471|showSuccessMessage|method|com.zipfetcher.ZipFetcherCore|showSuccessMessage|()V
+      @|com/zipfetcher/ZipFetcherCore.java|2560|2581|deleteSelfAndShutdown|method|com.zipfetcher.ZipFetcherCore|deleteSelfAndShutdown|()V
+      @|com/zipfetcher/ZipFetcherCore.java|2617|2626|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/ZipFetcherCore.java|2644|2650|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|2651|2656|error|method|org.apache.logging.log4j.Logger|error|(Ljava/lang/String;Ljava/lang/Throwable;)V
+   Method End: startFetchProcess()V
+   Method Start: createDefaultConfig()V
+      @|com/zipfetcher/ZipFetcherCore.java|2734|2753|createDefaultConfig|method|com.zipfetcher.ZipFetcherCore|createDefaultConfig|()V
+      @|com/zipfetcher/ZipFetcherCore.java|2784|2794|Properties|class|java.util.Properties|false
+      @|com/zipfetcher/ZipFetcherCore.java|2808|2818|Properties|class|java.util.Properties|false
+      @|com/zipfetcher/ZipFetcherCore.java|2841|2852|setProperty|method|java.util.Properties|setProperty|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+      @|com/zipfetcher/ZipFetcherCore.java|2893|2904|setProperty|method|java.util.Properties|setProperty|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+      @|com/zipfetcher/ZipFetcherCore.java|3001|3017|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|3028|3044|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|3045|3055|configFile|field|com.zipfetcher.ZipFetcherCore|configFile
+      @|com/zipfetcher/ZipFetcherCore.java|3083|3088|store|method|java.util.Properties|store|(Ljava/io/OutputStream;Ljava/lang/String;)V
+      @|com/zipfetcher/ZipFetcherCore.java|3155|3166|IOException|class|java.io.IOException|false
+      @|com/zipfetcher/ZipFetcherCore.java|3184|3190|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|3191|3196|error|method|org.apache.logging.log4j.Logger|error|(Ljava/lang/String;Ljava/lang/Throwable;)V
+   Method End: createDefaultConfig()V
+   Method Start: showProgressGUI()V
+      @|com/zipfetcher/ZipFetcherCore.java|3255|3263|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+      @|com/zipfetcher/ZipFetcherCore.java|3264|3268|Side|class|net.minecraftforge.fml.relauncher.Side|false
+      @|com/zipfetcher/ZipFetcherCore.java|3269|3275|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com/zipfetcher/ZipFetcherCore.java|3301|3316|showProgressGUI|method|com.zipfetcher.ZipFetcherCore|showProgressGUI|()V
+      @|com/zipfetcher/ZipFetcherCore.java|3329|3338|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/zipfetcher/ZipFetcherCore.java|3339|3351|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/zipfetcher/ZipFetcherCore.java|3354|3370|addScheduledTask|method|net.minecraft.util.IThreadListener|addScheduledTask|(Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;
+      @|com/zipfetcher/ZipFetcherCore.java|3391|3400|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/zipfetcher/ZipFetcherCore.java|3401|3413|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/zipfetcher/ZipFetcherCore.java|3416|3432|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com/zipfetcher/ZipFetcherCore.java|3437|3458|ZipFetcherProgressGUI|class|com.zipfetcher.ZipFetcherProgressGUI|false
+   Method End: showProgressGUI()V
+   Method Start: showSuccessMessage()V
+      @|com/zipfetcher/ZipFetcherCore.java|3487|3495|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+      @|com/zipfetcher/ZipFetcherCore.java|3496|3500|Side|class|net.minecraftforge.fml.relauncher.Side|false
+      @|com/zipfetcher/ZipFetcherCore.java|3501|3507|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com/zipfetcher/ZipFetcherCore.java|3533|3551|showSuccessMessage|method|com.zipfetcher.ZipFetcherCore|showSuccessMessage|()V
+      @|com/zipfetcher/ZipFetcherCore.java|3564|3573|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/zipfetcher/ZipFetcherCore.java|3574|3586|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/zipfetcher/ZipFetcherCore.java|3589|3605|addScheduledTask|method|net.minecraft.util.IThreadListener|addScheduledTask|(Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;
+      @|com/zipfetcher/ZipFetcherCore.java|3626|3635|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/zipfetcher/ZipFetcherCore.java|3636|3648|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/zipfetcher/ZipFetcherCore.java|3651|3667|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com/zipfetcher/ZipFetcherCore.java|3672|3692|ZipFetcherSuccessGUI|class|com.zipfetcher.ZipFetcherSuccessGUI|false
+   Method End: showSuccessMessage()V
+   Method Start: downloadFile(Ljava/lang/String;)Ljava/io/File;
+      @|com/zipfetcher/ZipFetcherCore.java|3760|3769|urlString|param|com.zipfetcher.ZipFetcherCore|downloadFile|(Ljava/lang/String;)Ljava/io/File;|urlString|0
+      @|com/zipfetcher/ZipFetcherCore.java|3735|3739|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|3740|3752|downloadFile|method|com.zipfetcher.ZipFetcherCore|downloadFile|(Ljava/lang/String;)Ljava/io/File;
+      @|com/zipfetcher/ZipFetcherCore.java|3753|3759|String|class|java.lang.String|false
+      @|com/zipfetcher/ZipFetcherCore.java|3799|3802|URL|class|java.net.URL|false
+      @|com/zipfetcher/ZipFetcherCore.java|3813|3816|URL|class|java.net.URL|false
+      @|com/zipfetcher/ZipFetcherCore.java|3817|3826|urlString|param|com.zipfetcher.ZipFetcherCore|downloadFile|(Ljava/lang/String;)Ljava/io/File;|urlString|0
+      @|com/zipfetcher/ZipFetcherCore.java|3841|3854|URLConnection|class|java.net.URLConnection|false
+      @|com/zipfetcher/ZipFetcherCore.java|3872|3886|openConnection|method|java.net.URL|openConnection|()Ljava/net/URLConnection;
+      @|com/zipfetcher/ZipFetcherCore.java|3913|3931|setRequestProperty|method|java.net.URLConnection|setRequestProperty|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com/zipfetcher/ZipFetcherCore.java|4036|4042|String|class|java.lang.String|false
+      @|com/zipfetcher/ZipFetcherCore.java|4054|4063|urlString|param|com.zipfetcher.ZipFetcherCore|downloadFile|(Ljava/lang/String;)Ljava/io/File;|urlString|0
+      @|com/zipfetcher/ZipFetcherCore.java|4064|4073|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|4074|4083|urlString|param|com.zipfetcher.ZipFetcherCore|downloadFile|(Ljava/lang/String;)Ljava/io/File;|urlString|0
+      @|com/zipfetcher/ZipFetcherCore.java|4084|4095|lastIndexOf|method|java.lang.String|lastIndexOf|(I)I
+      @|com/zipfetcher/ZipFetcherCore.java|4133|4141|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com/zipfetcher/ZipFetcherCore.java|4232|4236|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|4252|4256|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|4257|4269|minecraftDir|field|com.zipfetcher.ZipFetcherCore|minecraftDir
+      @|com/zipfetcher/ZipFetcherCore.java|4312|4323|InputStream|class|java.io.InputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|4340|4354|getInputStream|method|java.net.URLConnection|getInputStream|()Ljava/io/InputStream;
+      @|com/zipfetcher/ZipFetcherCore.java|4375|4391|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|4402|4418|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|4567|4571|read|method|java.io.InputStream|read|([B)I
+      @|com/zipfetcher/ZipFetcherCore.java|4614|4619|write|method|java.io.OutputStream|write|([BII)V
+      @|com/zipfetcher/ZipFetcherCore.java|4700|4706|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|4707|4711|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com/zipfetcher/ZipFetcherCore.java|4743|4750|getName|method|java.io.File|getName|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|4814|4823|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/ZipFetcherCore.java|4841|4847|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|4848|4853|error|method|org.apache.logging.log4j.Logger|error|(Ljava/lang/String;Ljava/lang/Throwable;)V
+      @|com/zipfetcher/ZipFetcherCore.java|4889|4898|urlString|param|com.zipfetcher.ZipFetcherCore|downloadFile|(Ljava/lang/String;)Ljava/io/File;|urlString|0
+   Method End: downloadFile(Ljava/lang/String;)Ljava/io/File;
+   Method Start: extractArchive(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|4990|5001|archiveFile|param|com.zipfetcher.ZipFetcherCore|extractArchive|(Ljava/io/File;)V|archiveFile|0
+      @|com/zipfetcher/ZipFetcherCore.java|4970|4984|extractArchive|method|com.zipfetcher.ZipFetcherCore|extractArchive|(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|4985|4989|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|5010|5021|IOException|class|java.io.IOException|false
+      @|com/zipfetcher/ZipFetcherCore.java|5032|5038|String|class|java.lang.String|false
+      @|com/zipfetcher/ZipFetcherCore.java|5050|5061|archiveFile|param|com.zipfetcher.ZipFetcherCore|extractArchive|(Ljava/io/File;)V|archiveFile|0
+      @|com/zipfetcher/ZipFetcherCore.java|5062|5069|getName|method|java.io.File|getName|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|5072|5083|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|5117|5125|endsWith|method|java.lang.String|endsWith|(Ljava/lang/String;)Z
+      @|com/zipfetcher/ZipFetcherCore.java|5148|5157|extract7z|method|com.zipfetcher.ZipFetcherCore|extract7z|(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|5158|5169|archiveFile|param|com.zipfetcher.ZipFetcherCore|extractArchive|(Ljava/io/File;)V|archiveFile|0
+      @|com/zipfetcher/ZipFetcherCore.java|5201|5211|extractZip|method|com.zipfetcher.ZipFetcherCore|extractZip|(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|5212|5223|archiveFile|param|com.zipfetcher.ZipFetcherCore|extractArchive|(Ljava/io/File;)V|archiveFile|0
+   Method End: extractArchive(Ljava/io/File;)V
+   Method Start: extractZip(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|5283|5290|zipFile|param|com.zipfetcher.ZipFetcherCore|extractZip|(Ljava/io/File;)V|zipFile|0
+      @|com/zipfetcher/ZipFetcherCore.java|5267|5277|extractZip|method|com.zipfetcher.ZipFetcherCore|extractZip|(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|5278|5282|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|5299|5310|IOException|class|java.io.IOException|false
+      @|com/zipfetcher/ZipFetcherCore.java|5326|5340|ZipInputStream|class|java.util.zip.ZipInputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|5351|5365|ZipInputStream|class|java.util.zip.ZipInputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|5370|5385|FileInputStream|class|java.io.FileInputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|5386|5393|zipFile|param|com.zipfetcher.ZipFetcherCore|extractZip|(Ljava/io/File;)V|zipFile|0
+      @|com/zipfetcher/ZipFetcherCore.java|5411|5419|ZipEntry|class|java.util.zip.ZipEntry|false
+      @|com/zipfetcher/ZipFetcherCore.java|5459|5471|getNextEntry|method|java.util.zip.ZipInputStream|getNextEntry|()Ljava/util/zip/ZipEntry;
+      @|com/zipfetcher/ZipFetcherCore.java|5512|5523|isDirectory|method|java.util.zip.ZipEntry|isDirectory|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|5610|5614|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|5632|5636|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|5637|5649|minecraftDir|field|com.zipfetcher.ZipFetcherCore|minecraftDir
+      @|com/zipfetcher/ZipFetcherCore.java|5657|5664|getName|method|java.util.zip.ZipEntry|getName|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|5685|5689|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|5713|5726|getParentFile|method|java.io.File|getParentFile|()Ljava/io/File;
+      @|com/zipfetcher/ZipFetcherCore.java|5799|5805|exists|method|java.io.File|exists|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|5841|5847|mkdirs|method|java.io.File|mkdirs|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|5907|5923|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|5934|5950|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|5986|5993|IOUtils|class|org.apache.commons.io.IOUtils|false
+      @|com/zipfetcher/ZipFetcherCore.java|5994|5998|copy|method|org.apache.commons.io.IOUtils|copy|(Ljava/io/InputStream;Ljava/io/OutputStream;)I
+      @|com/zipfetcher/ZipFetcherCore.java|6061|6067|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|6068|6072|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com/zipfetcher/ZipFetcherCore.java|6095|6102|getName|method|java.util.zip.ZipEntry|getName|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|6127|6137|closeEntry|method|java.util.zip.ZipInputStream|closeEntry|()V
+   Method End: extractZip(Ljava/io/File;)V
+   Method Start: extract7z(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|6211|6221|sevenZFile|param|com.zipfetcher.ZipFetcherCore|extract7z|(Ljava/io/File;)V|sevenZFile|0
+      @|com/zipfetcher/ZipFetcherCore.java|6196|6205|extract7z|method|com.zipfetcher.ZipFetcherCore|extract7z|(Ljava/io/File;)V
+      @|com/zipfetcher/ZipFetcherCore.java|6206|6210|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|6230|6241|IOException|class|java.io.IOException|false
+      @|com/zipfetcher/ZipFetcherCore.java|6257|6267|SevenZFile|class|org.apache.commons.compress.archivers.sevenz.SevenZFile|false
+      @|com/zipfetcher/ZipFetcherCore.java|6282|6292|SevenZFile|class|org.apache.commons.compress.archivers.sevenz.SevenZFile|false
+      @|com/zipfetcher/ZipFetcherCore.java|6293|6303|sevenZFile|param|com.zipfetcher.ZipFetcherCore|extract7z|(Ljava/io/File;)V|sevenZFile|0
+      @|com/zipfetcher/ZipFetcherCore.java|6320|6338|SevenZArchiveEntry|class|org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry|false
+      @|com/zipfetcher/ZipFetcherCore.java|6382|6394|getNextEntry|method|org.apache.commons.compress.archivers.sevenz.SevenZFile|getNextEntry|()Lorg/apache/commons/compress/archivers/sevenz/SevenZArchiveEntry;
+      @|com/zipfetcher/ZipFetcherCore.java|6435|6446|isDirectory|method|org.apache.commons.compress.archivers.ArchiveEntry|isDirectory|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|6533|6537|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|6555|6559|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|6560|6572|minecraftDir|field|com.zipfetcher.ZipFetcherCore|minecraftDir
+      @|com/zipfetcher/ZipFetcherCore.java|6580|6587|getName|method|org.apache.commons.compress.archivers.ArchiveEntry|getName|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|6608|6612|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|6636|6649|getParentFile|method|java.io.File|getParentFile|()Ljava/io/File;
+      @|com/zipfetcher/ZipFetcherCore.java|6722|6728|exists|method|java.io.File|exists|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|6764|6770|mkdirs|method|java.io.File|mkdirs|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|6830|6846|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|6857|6873|FileOutputStream|class|java.io.FileOutputStream|false
+      @|com/zipfetcher/ZipFetcherCore.java|7024|7028|read|method|org.apache.commons.compress.archivers.sevenz.SevenZFile|read|([B)I
+      @|com/zipfetcher/ZipFetcherCore.java|7075|7080|write|method|java.io.OutputStream|write|([BII)V
+      @|com/zipfetcher/ZipFetcherCore.java|7177|7183|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|7184|7188|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com/zipfetcher/ZipFetcherCore.java|7211|7218|getName|method|org.apache.commons.compress.archivers.ArchiveEntry|getName|()Ljava/lang/String;
+   Method End: extract7z(Ljava/io/File;)V
+   Method Start: deleteSelfAndShutdown()V
+      @|com/zipfetcher/ZipFetcherCore.java|7278|7299|deleteSelfAndShutdown|method|com.zipfetcher.ZipFetcherCore|deleteSelfAndShutdown|()V
+      @|com/zipfetcher/ZipFetcherCore.java|7316|7322|Thread|class|java.lang.Thread|false
+      @|com/zipfetcher/ZipFetcherCore.java|7365|7371|Thread|class|java.lang.Thread|false
+      @|com/zipfetcher/ZipFetcherCore.java|7372|7377|sleep|method|java.lang.Thread|sleep|(J)V
+      @|com/zipfetcher/ZipFetcherCore.java|7485|7489|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|7503|7510|modsDir|field|com.zipfetcher.ZipFetcherCore|modsDir
+      @|com/zipfetcher/ZipFetcherCore.java|7511|7520|listFiles|method|java.io.File|listFiles|(Ljava/io/FilenameFilter;)[Ljava/io/File;
+      @|com/zipfetcher/ZipFetcherCore.java|7557|7561|name|param|java.io.FilenameFilter|accept|(Ljava/io/File;Ljava/lang/String;)Z|name|-1
+      @|com/zipfetcher/ZipFetcherCore.java|7562|7573|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|7576|7584|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com/zipfetcher/ZipFetcherCore.java|7602|7606|name|param|java.io.FilenameFilter|accept|(Ljava/io/File;Ljava/lang/String;)Z|name|-1
+      @|com/zipfetcher/ZipFetcherCore.java|7607|7615|endsWith|method|java.lang.String|endsWith|(Ljava/lang/String;)Z
+      @|com/zipfetcher/ZipFetcherCore.java|7708|7712|File|class|java.io.File|false
+      @|com/zipfetcher/ZipFetcherCore.java|7877|7883|System|class|java.lang.System|false
+      @|com/zipfetcher/ZipFetcherCore.java|7884|7895|getProperty|method|java.lang.System|getProperty|(Ljava/lang/String;)Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|7907|7918|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|7921|7929|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com/zipfetcher/ZipFetcherCore.java|7980|7992|deleteOnExit|method|java.io.File|deleteOnExit|()V
+      @|com/zipfetcher/ZipFetcherCore.java|8073|8079|delete|method|java.io.File|delete|()Z
+      @|com/zipfetcher/ZipFetcherCore.java|8141|8147|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|8148|8152|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com/zipfetcher/ZipFetcherCore.java|8191|8198|getName|method|java.io.File|getName|()Ljava/lang/String;
+      @|com/zipfetcher/ZipFetcherCore.java|8236|8245|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/ZipFetcherCore.java|8279|8285|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|8286|8291|error|method|org.apache.logging.log4j.Logger|error|(Ljava/lang/String;Ljava/lang/Throwable;)V
+      @|com/zipfetcher/ZipFetcherCore.java|8461|8470|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/zipfetcher/ZipFetcherCore.java|8471|8483|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/zipfetcher/ZipFetcherCore.java|8486|8502|addScheduledTask|method|net.minecraft.util.IThreadListener|addScheduledTask|(Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;
+      @|com/zipfetcher/ZipFetcherCore.java|8531|8540|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/zipfetcher/ZipFetcherCore.java|8541|8553|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/zipfetcher/ZipFetcherCore.java|8556|8564|shutdown|method|net.minecraft.client.Minecraft|shutdown|()V
+      @|com/zipfetcher/ZipFetcherCore.java|8626|8635|Exception|class|java.lang.Exception|false
+      @|com/zipfetcher/ZipFetcherCore.java|8657|8663|logger|field|com.zipfetcher.ZipFetcherCore|logger
+      @|com/zipfetcher/ZipFetcherCore.java|8664|8669|error|method|org.apache.logging.log4j.Logger|error|(Ljava/lang/String;Ljava/lang/Throwable;)V
+      @|com/zipfetcher/ZipFetcherCore.java|8723|8728|start|method|java.lang.Thread|start|()V
+   Method End: deleteSelfAndShutdown()V
+Class End  : com.zipfetcher.ZipFetcherCore
+endProcessing "com/zipfetcher/ZipFetcherCore.java"
+
+startProcessing "com/zipfetcher/ZipFetcherProgressGUI.java" md5: 9a48d12e027fef318617850df35eb220
+@|com/zipfetcher/ZipFetcherProgressGUI.java|8|22|com.zipfetcher|package|com.zipfetcher|(file)
+Class Start: com.zipfetcher.ZipFetcherProgressGUI
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|264|272|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|273|277|Side|class|net.minecraftforge.fml.relauncher.Side|false
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|278|284|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|299|320|ZipFetcherProgressGUI|class|com.zipfetcher.ZipFetcherProgressGUI|false
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|329|338|GuiScreen|class|net.minecraft.client.gui.GuiScreen|false
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|357|365|progress|field|com.zipfetcher.ZipFetcherProgressGUI|progress|
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|383|389|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|383|389|String|class|java.lang.String|false
+   @|com/zipfetcher/ZipFetcherProgressGUI.java|390|400|statusText|field|com.zipfetcher.ZipFetcherProgressGUI|statusText|
+   Method Start: initGui()V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|448|456|Override|class|java.lang.Override|false
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|473|480|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|499|506|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|523|533|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|534|539|clear|method|java.util.Collection|clear|()V
+   Method End: initGui()V
+   Method Start: drawScreen(IIF)V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|595|601|mouseX|param|com.zipfetcher.ZipFetcherProgressGUI|drawScreen|(IIF)V|mouseX|0
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|607|613|mouseY|param|com.zipfetcher.ZipFetcherProgressGUI|drawScreen|(IIF)V|mouseY|1
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|621|633|partialTicks|param|com.zipfetcher.ZipFetcherProgressGUI|drawScreen|(IIF)V|partialTicks|2
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|555|563|Override|class|java.lang.Override|false
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|580|590|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|650|671|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|719|737|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|743|755|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|777|782|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|853|871|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|877|889|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|891|901|statusText|field|com.zipfetcher.ZipFetcherProgressGUI|statusText
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|908|913|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1065|1070|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1129|1137|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1249|1257|progress|field|com.zipfetcher.ZipFetcherProgressGUI|progress
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1261|1269|progress|field|com.zipfetcher.ZipFetcherProgressGUI|progress
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1339|1347|progress|field|com.zipfetcher.ZipFetcherProgressGUI|progress
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1364|1372|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1487|1493|String|class|java.lang.String|false
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1509|1517|progress|field|com.zipfetcher.ZipFetcherProgressGUI|progress
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1538|1556|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1562|1574|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1595|1600|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1651|1661|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1662|1668|mouseX|param|com.zipfetcher.ZipFetcherProgressGUI|drawScreen|(IIF)V|mouseX|0
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1670|1676|mouseY|param|com.zipfetcher.ZipFetcherProgressGUI|drawScreen|(IIF)V|mouseY|1
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1678|1690|partialTicks|param|com.zipfetcher.ZipFetcherProgressGUI|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: doesGuiPauseGame()Z
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1705|1713|Override|class|java.lang.Override|false
+      @|com/zipfetcher/ZipFetcherProgressGUI.java|1733|1749|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+Class End  : com.zipfetcher.ZipFetcherProgressGUI
+endProcessing "com/zipfetcher/ZipFetcherProgressGUI.java"
+
+startProcessing "com/zipfetcher/ZipFetcherSuccessGUI.java" md5: a799555ade8f41b7ae8ee730f1137f3a
+@|com/zipfetcher/ZipFetcherSuccessGUI.java|8|22|com.zipfetcher|package|com.zipfetcher|(file)
+Class Start: com.zipfetcher.ZipFetcherSuccessGUI
+   @|com/zipfetcher/ZipFetcherSuccessGUI.java|211|219|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+   @|com/zipfetcher/ZipFetcherSuccessGUI.java|220|224|Side|class|net.minecraftforge.fml.relauncher.Side|false
+   @|com/zipfetcher/ZipFetcherSuccessGUI.java|225|231|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+   @|com/zipfetcher/ZipFetcherSuccessGUI.java|246|266|ZipFetcherSuccessGUI|class|com.zipfetcher.ZipFetcherSuccessGUI|false
+   @|com/zipfetcher/ZipFetcherSuccessGUI.java|275|284|GuiScreen|class|net.minecraft.client.gui.GuiScreen|false
+   @|com/zipfetcher/ZipFetcherSuccessGUI.java|304|315|displayTime|field|com.zipfetcher.ZipFetcherSuccessGUI|displayTime|
+   Method Start: initGui()V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|323|331|Override|class|java.lang.Override|false
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|348|355|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|374|381|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|398|408|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|409|414|clear|method|java.util.Collection|clear|()V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|431|441|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|442|445|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|450|459|GuiButton|class|net.minecraft.client.gui.GuiButton|false
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|468|473|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|489|495|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|534|545|displayTime|field|com.zipfetcher.ZipFetcherSuccessGUI|displayTime
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|548|554|System|class|java.lang.System|false
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|555|572|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+   Method End: initGui()V
+   Method Start: drawScreen(IIF)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|628|634|mouseX|param|com.zipfetcher.ZipFetcherSuccessGUI|drawScreen|(IIF)V|mouseX|0
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|640|646|mouseY|param|com.zipfetcher.ZipFetcherSuccessGUI|drawScreen|(IIF)V|mouseY|1
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|654|666|partialTicks|param|com.zipfetcher.ZipFetcherSuccessGUI|drawScreen|(IIF)V|partialTicks|2
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|588|596|Override|class|java.lang.Override|false
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|613|623|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|683|704|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|762|780|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|786|798|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|831|836|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|847|853|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|888|906|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|912|924|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|967|972|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|983|989|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1024|1042|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1048|1060|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1113|1118|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1129|1135|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1216|1222|System|class|java.lang.System|false
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1223|1240|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1245|1256|displayTime|field|com.zipfetcher.ZipFetcherSuccessGUI|displayTime
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1284|1286|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1287|1303|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1344|1354|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1355|1361|mouseX|param|com.zipfetcher.ZipFetcherSuccessGUI|drawScreen|(IIF)V|mouseX|0
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1363|1369|mouseY|param|com.zipfetcher.ZipFetcherSuccessGUI|drawScreen|(IIF)V|mouseY|1
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1371|1383|partialTicks|param|com.zipfetcher.ZipFetcherSuccessGUI|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1452|1458|button|param|com.zipfetcher.ZipFetcherSuccessGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1398|1406|Override|class|java.lang.Override|false
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1426|1441|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1442|1451|GuiButton|class|net.minecraft.client.gui.GuiButton|false
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1474|1480|button|param|com.zipfetcher.ZipFetcherSuccessGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1481|1483|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1509|1511|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1512|1528|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: doesGuiPauseGame()Z
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1558|1566|Override|class|java.lang.Override|false
+      @|com/zipfetcher/ZipFetcherSuccessGUI.java|1586|1602|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+Class End  : com.zipfetcher.ZipFetcherSuccessGUI
+endProcessing "com/zipfetcher/ZipFetcherSuccessGUI.java"
+

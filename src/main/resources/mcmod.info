@@ -1,0 +1,16 @@
+[
+{
+  "modid": "zipfetcher",
+  "name": "Zip Fetcher",
+  "description": "Downloads and extracts zip/7z files from configured URLs",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ZipFetcher"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
