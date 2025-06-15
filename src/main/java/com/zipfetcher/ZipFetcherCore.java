@@ -26,12 +26,20 @@ public class ZipFetcherCore {
     private static File configFile;
     private static File minecraftDir;
     private static File modsDir;
+    private static boolean shouldDeleteMod = false;
 
     public static void initialize(Logger log) {
         logger = log;
         minecraftDir = Minecraft.getMinecraft().mcDataDir;
         modsDir = new File(minecraftDir, "mods");
         configFile = new File(minecraftDir, CONFIG_FILE);
+
+        // Register shutdown hook to delete mod file before game exits
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            if (shouldDeleteMod) {
+                deleteSelfOnShutdown();
+            }
+        }));
 
         // Start the process in a separate thread to avoid blocking the game
         new Thread(ZipFetcherCore::startFetchProcess).start();
@@ -70,8 +78,9 @@ public class ZipFetcherCore {
                 // Show success message
                 showSuccessMessage();
                 
-                // Delete the mod file and shutdown
-                deleteSelfAndShutdown();
+                // Mark for deletion and shutdown
+                shouldDeleteMod = true;
+                scheduledShutdown();
             }
 
         } catch (Exception e) {
@@ -202,30 +211,10 @@ public class ZipFetcherCore {
         }
     }
 
-    private static void deleteSelfAndShutdown() {
+    private static void scheduledShutdown() {
         new Thread(() -> {
             try {
                 Thread.sleep(3000); // Wait 3 seconds
-                
-                // Find and delete this mod file
-                File[] modFiles = modsDir.listFiles((dir, name) -> 
-                    name.toLowerCase().contains("zipfetcher") && name.endsWith(".jar"));
-                
-                if (modFiles != null) {
-                    for (File modFile : modFiles) {
-                        try {
-                            // On Windows, we need to mark for deletion on exit
-                            if (System.getProperty("os.name").toLowerCase().contains("win")) {
-                                modFile.deleteOnExit();
-                            } else {
-                                modFile.delete();
-                            }
-                            logger.info("Marked mod for deletion: " + modFile.getName());
-                        } catch (Exception e) {
-                            logger.error("Failed to delete mod file", e);
-                        }
-                    }
-                }
                 
                 // Shutdown the game
                 Minecraft.getMinecraft().addScheduledTask(() -> {
@@ -233,8 +222,77 @@ public class ZipFetcherCore {
                 });
                 
             } catch (Exception e) {
-                logger.error("Error during cleanup", e);
+                logger.error("Error during scheduled shutdown", e);
             }
         }).start();
+    }
+
+    // This method will be called by the shutdown hook
+    private static void deleteSelfOnShutdown() {
+        try {
+            // Find and delete this mod file
+            File[] modFiles = modsDir.listFiles((dir, name) -> 
+                (name.toLowerCase().contains("zipfetcher") || name.toLowerCase().contains("zip-fetcher")) 
+                && name.endsWith(".jar"));
+            
+            if (modFiles != null) {
+                for (File modFile : modFiles) {
+                    try {
+                        boolean deleted = false;
+                        
+                        // Try multiple deletion methods
+                        if (modFile.exists()) {
+                            // Method 1: Direct deletion
+                            deleted = modFile.delete();
+                            
+                            // Method 2: Force deletion using NIO if direct deletion fails
+                            if (!deleted) {
+                                try {
+                                    Files.deleteIfExists(modFile.toPath());
+                                    deleted = !modFile.exists();
+                                } catch (Exception e) {
+                                    // Ignore and try next method
+                                }
+                            }
+                            
+                            // Method 3: Create a batch file for Windows systems to delete after JVM exit
+                            if (!deleted && System.getProperty("os.name").toLowerCase().contains("win")) {
+                                createDeletionScript(modFile);
+                            }
+                        }
+                        
+                        if (deleted) {
+                            logger.info("Successfully deleted mod file: " + modFile.getName());
+                        } else {
+                            logger.info("Scheduled mod file for deletion: " + modFile.getName());
+                        }
+                        
+                    } catch (Exception e) {
+                        logger.error("Failed to delete mod file: " + modFile.getName(), e);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            logger.error("Error during mod self-deletion", e);
+        }
+    }
+
+    // Create a script to delete the mod file after JVM exits (Windows only)
+    private static void createDeletionScript(File modFile) {
+        try {
+            File scriptFile = new File(minecraftDir, "delete_zipfetcher.bat");
+            try (PrintWriter writer = new PrintWriter(new FileWriter(scriptFile))) {
+                writer.println("@echo off");
+                writer.println("timeout /t 2 /nobreak > nul");
+                writer.println("del /f /q \"" + modFile.getAbsolutePath() + "\"");
+                writer.println("del /f /q \"" + scriptFile.getAbsolutePath() + "\"");
+            }
+            
+            // Execute the script
+            new ProcessBuilder("cmd", "/c", "start", "/min", scriptFile.getAbsolutePath()).start();
+            
+        } catch (Exception e) {
+            logger.error("Failed to create deletion script", e);
+        }
     }
 }
