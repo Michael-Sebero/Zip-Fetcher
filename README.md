@@ -11,7 +11,7 @@ To provide directory patches to a Minecraft instance automatically via the conte
 * Once you install the mod a file will be created inside your Minecraft directory called 
 `zipfetcher.properties` add your URL which contains the archive and the mod will fetch & extract it where the configuration file is located `/minecraft/zipfetcher.properties/`.
 
-* Launch the game, the mod will download and extract the archive. Afterwards it'll delete the archive, remove itself, and then exit the game.
+* * Launch the game, the mod will download and extract the archive. Afterwards it'll delete the archive, removes itself and then exit the game.
 
 * Upon next launch your Minecraft instance is now patched.
 
